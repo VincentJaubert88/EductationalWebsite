@@ -1,0 +1,334 @@
+@font-face{
+	font-family:'Amble';
+	src: url('amble/Amble-Regular.ttf');
+}
+#grid-wrapper
+{
+	width: 950px;
+	margin:auto;
+}
+h1
+{
+	font-size: 1.75em;
+}
+h2
+{
+	text-decoration: underline;
+}
+h3
+{
+	background-color:black;
+    color:white;
+    font-size:0.9em;
+    margin-bottom:0px;
+    margin-top:0px;
+}
+p
+{
+	font-size: 1em;
+	/*
+	font-weight:bold;
+	font-style: italic;
+	text-decoration: underline;
+	text-decoration: underline;
+	text-decoration: overline;
+	text-decoration: line-through;
+	*/
+	font-family:Amble,"Arial Black";
+
+}
+body
+{
+   	margin: 0;
+   	padding: 0;
+	background-color: white;
+}
+header
+{
+	background-color:rgb(116, 81, 235); 
+	color:white;
+	overflow:auto;
+	word-wrap: break-word;
+}
+footer
+{
+	background-color:rgb(236, 236, 236);
+	overflow:auto;
+	word-wrap: break-word;
+}
+#bloc_page
+{
+	padding:25px;
+	border: 3px black line-through;
+	width:950px;
+	margin:auto;
+	background-color: white;
+}
+#Description
+{
+	color:blue;
+}
+.dessous
+{
+	text-align: right;
+	clear:both;
+}
+
+nav
+{
+    right: 0px;
+	flex-direction:inline-block;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	align-items:stretch;
+}
+nav ul
+{
+	background-color:rgba(255,255,255,0.5);
+	border: 2px black;
+	border-style: double;
+	border-radius: 10px;
+	color:blue;
+	box-shadow: 3px 3px 3px black;
+	font-size: 1em;
+	font-family:Amble;
+	list-style-type: none;
+	display:flex;
+}
+nav li
+{
+	margin-right:15px;
+}
+nav a
+{
+	font-size:1.5em;
+	padding-bottom:3px;
+	text-decoration:none;
+}
+nav a:hover
+{
+	color:#760001;
+	border-bottom:3px solid #760001;
+}
+
+figure
+{
+	text-align: center;
+	height: auto;
+}
+a:hover
+{
+	color:green;
+}
+p:hover
+{
+	/*border-left:3px solid black;*/
+}
+input:focus
+{
+	background-color:lightblue;
+}
+a:visited
+{
+	
+	/*color:#654321;*/
+
+}
+#conteneur
+{
+	display:flex;
+	flex-direction:line;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	align-items:stretch;
+}
+.element
+{
+	width:auto;
+	height:auto;
+}
+.element:nth-child(1)
+{
+	/*background-color:orange;
+	flex:1;*/
+}
+.element:nth-child(2)
+{
+	/*background-color:blue;*/
+	flex:2;
+}
+.element:nth-child(3)
+{
+	
+	/*background-color:#ad6;*/
+}
+#conteneur2
+{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: left;
+	align-items:stretch;
+}
+.element2
+{
+
+	/*border:2px solid #444;*/
+}
+.element2:nth-child(1)
+{
+	padding-left: 10px;
+	width:65%;
+	height:auto;
+	order:1;
+}
+.element2:nth-child(2)
+{
+	width:30%;
+	height:auto;
+	order:2;
+	overflow:hidden;
+	min-width:200px
+}
+table
+{
+	border-collapse:collapse;
+	background-color: red;
+	text-align:center;
+	width:950px;
+}
+
+td
+{
+	border: 1px black solid;
+	background-color: white;
+}
+tr
+{	
+	border: 1px black solid;
+	background-color: white;
+}
+
+@media all and (min-width:1025px)
+{
+	.mobile
+	{
+		display:none;
+	}
+	.flottant
+	{
+		float: left;
+		height: auto;
+
+	}
+	.flottantNav
+	{
+		float: left;
+		height: auto;
+
+	}
+}
+@media all and (max-width:1024px)
+ {
+ 	.flottant
+	{
+		float:left;
+	}
+	.flottantNav
+	{
+		float: center;
+		height: auto;
+	}
+ 	p
+ 	{
+ 		
+ 	}
+ 	#bloc_page
+ 	{
+ 		width:auto;
+ 	}
+ 	table
+ 	{
+ 		width:auto;
+ 	}
+ 	nav
+ 	{
+ 		width:auto;
+ 		text-align:center;
+ 	}
+ 	nav ul
+ 	{
+ 		flex-direction:column;
+ 	}
+ 	nav li
+ 	{
+ 		padding-left:4px;
+ 	}
+ 	nav a
+ 	{
+ 		
+ 	}
+ 	nav a:hover
+ 	{
+ 		border-bottom:0;
+ 	}
+	.mobile
+	{
+		display:visible;
+	}
+ }
+div#galerie
+{
+  justify-content: space-around;
+  right: 0px;
+  background: rgba(255,255,255,1) ;
+  border: 1px solid #dcb ;
+  padding: 15px ;
+  
+  text-align: center ;
+  font: 0.9em Georgia, serif ;
+}
+
+ul#galerie_mini
+{
+  margin: 0 ;
+  padding: 0 ;
+  list-style-type: none ;
+}
+
+ul#galerie_mini li
+{
+  float: left ;
+}
+
+ul#galerie_mini li a img
+{
+  margin: 2px 1px ;
+  border: 1px solid #dcb ;
+}
+
+dl#photo
+{
+  clear: both ;
+  margin: 0 auto ;
+}
+
+dl#photo dt
+{
+  font: italic 2.5em/1.5em Georgia, serif ;
+  color: #dcb ;
+}
+
+dl#photo dd
+{
+  margin: 0 ;
+}
+
+dl#photo img
+{
+  border: 1px solid #dcb ;
+}
+
+.news
+{
+
+}
